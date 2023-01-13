@@ -1,0 +1,20 @@
+a) write a java program to print a your name using another function
+by passing your name as input
+1. Create a func
+2.Create an object
+3.print your name -> this should be inside the function you created
+
+import java.util.Scanner;
+class js{
+    public static void main(String args[]){
+        Scanner obj = new Scanner(System.in);
+        System.out.println("eter your name:");
+        String name = obj.nextLine();
+        na(name);
+    }
+    static void na(String name){
+        System.out.println("Enter your name"+name);
+    }    
+}
+
+b) In Java program , create multiple object and print the number of the object as it called

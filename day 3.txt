@@ -1,0 +1,118 @@
+
+---------------------area of circle by creating object:---------------------------
+
+class Circle {
+    private double radius;
+
+    public Circle(double radius) {
+        this.radius = radius;
+    }
+
+    public double getArea() {
+        return 3.14 * radius * radius;
+    }
+    
+    public double getPerimeter(){
+        return 2 * 3.14 * radius;
+    }
+}
+
+class shape {
+    public static void main(String[] args) {
+        Circle circle = new Circle(5);
+        System.out.println(circle.getArea());
+        System.out.println(circle.getPerimeter());
+
+    }
+}
+
+
+------------program to reverse the number-------------------
+
+public class Reverse  
+{  
+public static void main(String[] args)   
+{  
+int number = 12345;
+int rev = 0;  
+while(number != 0)   
+{  
+int rem = number % 10;  
+rev = rev * 10 + rem;  
+number = number/10;  
+}  
+System.out.println("The reverse of the given number is: " + rev);  
+}  
+}  
+
+
+--------------------nums = [1, 2, 3, 4, 5, 6, 7]--------------------------
+--------------------count odd and even numbers----------------------------
+
+class Count{
+    public static void main(String args[]){
+        int[] array={1,2,3,4,5};
+        int count_even=0, count_odd=0,count_zero=0;
+        for(int i=0;i<array.length;i++){
+            if(array[i]==0){
+                count_zero++;
+            }
+            else if(array[i]%2==0&array[i]!=0){
+                count_even++;
+            }
+            else{
+                count_odd++;
+            }
+            System.out.println(count_even);
+            System.out.println(count_odd);
+            System.out.println(count_zero);
+            
+        }
+    }
+}
+
+----------------nums[] = {7, 12, 9, 15, 19, 32, 56, 70}  write a java program to get the second largest element of the array----------
+
+class SecondMax{
+    public static void main(String[] args) {
+        int[] nums = {7, 12, 9, 15, 19, 32, 56, 70};
+        
+        int maxNum = nums[0];
+        int secMaxNum = nums[0];
+        int n = nums.length;
+        
+        for(int i=0; i<n; i++){
+            if(nums[i] > maxNum){
+                secMaxNum = maxNum;
+                maxNum = nums[i];
+            }
+        }
+        System.out.println(maxNum);
+        System.out.print(secMaxNum);
+    }
+}
+
+--------------------------palindrome------------------------------
+
+class Palindrom{
+    public static void main(String args[]){
+        String str="aabbbba";
+
+        int i=0;
+        int n=str.length();
+        String rev="";
+        for(i = n - 1; i >= 0; i--){
+            rev=rev+str.charAt(i);
+            }
+        if(str.equals(rev)){
+            System.out.println("true");
+        }
+        else{
+            System.out.println("false");
+        }
+        
+    }
+}
+
+
+
